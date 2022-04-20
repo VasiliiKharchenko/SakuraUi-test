@@ -53,6 +53,27 @@ class SeleniumBase:
         name = name()
         return [element for element in elements if element.text == name][0]
 
+# При удалении куки
+#    def delete_cookie(self, cookie_name: str) -> None:
+#        self.driver.delete_cookie(cookie_name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

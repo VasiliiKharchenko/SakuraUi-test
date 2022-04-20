@@ -22,6 +22,7 @@ def get_webdriver(get_chrome_options):
 @pytest.fixture(scope='function') # function для запуска паралельных тестов
 def setup(request, get_webdriver):
     driver = get_webdriver
+#    driver = EventFiringWebDriver(driver, MyListener()) для удаления куки
     url = 'http://sakuratest.cloud.tehnosk.ru/uaa/login.html' # сменить на тестовый стенд
     if request.cls is not None:     # if dont use class for tests
         request.cls.driver = driver

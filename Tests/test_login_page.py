@@ -24,11 +24,30 @@ class TestLoginPage:
         time.sleep(3)   # wait for test some seconds
 
 
+# Прокликивание элементов на странице с удалением куки, которая определяет тест как робот
+#    def test_login_page_links(self):
+#        login_page_nav = TestLoginPage(self.driver)
+#        cookies = login_page_nav.driver.get_cookies()
+#        cookies_names = [cookie['name'] for cookie in cookies]
+#        print(cookie)
+#        print('-------------------')
+#        print(cookies_names)
+#        for index in range(12):
+#            login_page_nav.get_nav_links()[index].click()
+#            for cookie_name in cookies_names:
+#                login_page_nav.driver.delete_cookie(cookie_name)
+#                login_page_nav.driver.refresh()
+#                login_page_nav.is_visible('tag_name', 'h1', cookie_name)
 
+#                time.sleep(1)
 
-
-
-
+#   Тест после нахождения куки которая ломала доступ name-название куки
+#    def test_nav_links(self):
+#        LoginPage_nav = LoginPageNav(self.driver)
+#        LoginPage_nav.driver.delete_cookie('name')
+#        for index in range(12):
+#            LoginPage_nav.get_nav_links()[index].click()
+#            LoginPage_nav.driver.delete_cookie('name')
 
 
 
